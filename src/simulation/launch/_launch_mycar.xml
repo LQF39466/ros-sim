@@ -5,5 +5,9 @@
     <node pkg="joint_state_publisher" type="joint_state_publisher" name="joint_state_publisher" output="screen" />
     <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher" output="screen" />
     <node pkg="joint_state_publisher_gui" type="joint_state_publisher_gui" name="joint_state_publisher_gui" output="screen" />
+    <node name="arbotix" pkg="arbotix_python" type="arbotix_driver" output="screen">
+        <rosparam file="$(find simulation)/config/arbotix_config.yaml" command="load" />
+        <param name="sim" value="true" />
+    </node>
 
 </launch>
