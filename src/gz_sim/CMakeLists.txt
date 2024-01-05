@@ -13,6 +13,7 @@ find_package(catkin REQUIRED COMPONENTS
   gazebo_ros_control
   urdf
   xacro
+  roscpp
   teleop-twist-keyboard
 )
 
