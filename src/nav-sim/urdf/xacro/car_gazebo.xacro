@@ -11,7 +11,7 @@
     <xacro:include filename="sensors_camera.xacro" />
     <!-- kinect仿真的 xacro 文件 -->
     <xacro:include filename="sensors_kinect.xacro" />
-      <!-- Transmission is important to link the joints and the controller -->
+  <!-- Transmission is important to link the joints and the controller -->
   <transmission name="left_wheel_joint_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="left_wheel_joint">
