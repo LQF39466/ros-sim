@@ -1,5 +1,5 @@
 <launch>
-  <arg name="filename" value="$(find nav-sim)/map" />
+  <arg name="filename" value="$(find nav-sim)/map/map" />
   <arg name="map" default="map.yaml" />
   <!-- 将 Urdf 文件的内容加载到参数服务器 -->
   <param name="robot_description" command="$(find xacro)/xacro $(find gz_sim)/urdf/xacro/car_gazebo.xacro" />
