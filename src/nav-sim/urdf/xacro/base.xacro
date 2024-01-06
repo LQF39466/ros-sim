@@ -88,7 +88,7 @@
 
       </link>
 
-      <joint name="${name}_wheel2base_link" type="continuous">
+      <joint name="base_${name}_wheel_joint" type="continuous">
         <parent link="base_link" />
         <child link="${name}_wheel" />
         <origin xyz="0 ${flag * base_link_radius} ${-(earth_space + base_link_length / 2 - wheel_radius) }" />
@@ -100,8 +100,8 @@
       </gazebo>
 
     </xacro:macro>
-    <xacro:add_wheels name="left" flag="1" />
-    <xacro:add_wheels name="right" flag="-1" />
+    <xacro:add_wheels name="l" flag="1" />
+    <xacro:add_wheels name="r" flag="-1" />
     <!-- 支撑轮 -->
     <!-- 支撑轮属性 -->
     <xacro:property name="support_wheel_radius" value="0.0075" /> <!-- 支撑轮半径 -->
