@@ -162,7 +162,7 @@ include_directories(
 # See http://ros.org/doc/api/catkin/html/adv_user_guide/variables.html
 
 install(DIRECTORY
-  urdf launch worlds config
+  urdf launch worlds config map
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
 )
 
